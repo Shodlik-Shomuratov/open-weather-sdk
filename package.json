@@ -1,6 +1,6 @@
 {
 	"name": "@shodlik_shomuratov/openweather-sdk",
-	"version": "2.0.3",
+	"version": "2.0.4",
 	"description": "Software Development Kit(SDK) to get weather information related to given city easily.",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
