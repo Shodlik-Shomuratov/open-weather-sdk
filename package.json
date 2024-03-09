@@ -1,5 +1,5 @@
 {
-	"name": "@shodlikshomuratov/openweather-sdk",
+	"name": "@shodlik_shomuratov/openweather-sdk",
 	"version": "1.0.0",
 	"description": "Software Development Kit(SDK) to get weather information related to given city easily.",
 	"main": "index.ts",
@@ -8,7 +8,12 @@
 		"start:dev": "nodemon index.ts",
 		"test": "jest"
 	},
-	"keywords": ["node.js", "jest", "redis", "typescript"],
+	"keywords": [
+		"node.js",
+		"jest",
+		"redis",
+		"typescript"
+	],
 	"author": "Shodlik Shomuratov",
 	"license": "ISC",
 	"dependencies": {
