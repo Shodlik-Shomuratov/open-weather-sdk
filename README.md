@@ -22,9 +22,9 @@ Used technologies:
 
 ## Installation
 
--   **npm** - `npm install @shodlikshomuratov/open-weather-sdk`
--   **yarn** - `yarn add @shodlikshomuratov/open-weather-sdk`
--   **pnpm** - `pnpm add @shodlikshomuratov/open-weather-sdk`
+-   **npm** - `npm install @shodlikshomuratov/openweather-sdk`
+-   **yarn** - `yarn add @shodlikshomuratov/openweather-sdk`
+-   **pnpm** - `pnpm add @shodlikshomuratov/openweather-sdk`
 
 ## Configuration
 
@@ -32,7 +32,7 @@ Used technologies:
 2. Instantiate SDK client and pass it to KameleoonProvider
 
 ```ts
-    import SDK from "@shodlikshomuratov/open-weather-sdk";
+    import SDK from "@shodlikshomuratov/openweather-sdk";
 
     cosnt sdk = new SDK("your_api_key");
 
@@ -47,7 +47,7 @@ Used technologies:
 1. **Default mode.** In this mode you every time call the _getCurrentWeather()_ method SDK makes a new request.
 
 ```ts
-    import SDK from "@shodlikshomuratov/open-weather-sdk";
+    import SDK from "@shodlikshomuratov/openweather-sdk";
 
     cosnt sdk = new SDK("your_api_key", {
         mode: "default"
@@ -62,7 +62,7 @@ Used technologies:
 2. **Polling mode.** In polling mode in order to maintenance zero latency response, you get data from stored weather data and SDK makes a new request for you every 10 minutes.
 
 ```ts
-    import SDK from "@shodlikshomuratov/open-weather-sdk";
+    import SDK from "@shodlikshomuratov/openweather-sdk";
 
     cosnt sdk = new SDK("your_api_key", {
         mode: "polling"
@@ -79,7 +79,7 @@ Used technologies:
 If you want you can save updated weather data in your redis store. Only thing you have to do is give SDK redis options in the redis field.
 
 ```ts
-    import SDK from "@shodlikshomuratov/open-weather-sdk";
+    import SDK from "@shodlikshomuratov/openweather-sdk";
 
     cosnt sdk = new SDK("your_api_key", {
         mode: "polling",
