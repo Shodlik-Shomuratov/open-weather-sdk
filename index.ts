@@ -199,7 +199,7 @@ class OpenWeatherSDK {
 
 			if (redis) {
 				const intervalId = setInterval(async () => {
-					const cities = await redis.HGETALL("cities");
+					const cities: any = await redis.HGETALL("cities");
 
 					for (const key in cities) {
 						const raw = cities[key];

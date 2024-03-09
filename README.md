@@ -22,9 +22,9 @@ Used technologies:
 
 ## Installation
 
--   **npm** - `npm install @shodlikshomuratov/openweather-sdk`
--   **yarn** - `yarn add @shodlikshomuratov/openweather-sdk`
--   **pnpm** - `pnpm add @shodlikshomuratov/openweather-sdk`
+-   **npm** - `npm install @shodlik_shomuratov/openweather-sdk`
+-   **yarn** - `yarn add @shodlik_shomuratov/openweather-sdk`
+-   **pnpm** - `pnpm add @shodlik_shomuratov/openweather-sdk`
 
 ## Configuration
 
@@ -32,14 +32,16 @@ Used technologies:
 2. Instantiate SDK client and pass it to KameleoonProvider
 
 ```ts
-    import SDK from "@shodlikshomuratov/openweather-sdk";
+import SDK from "@shodlik_shomuratov/openweather-sdk";
 
-    cosnt sdk = new SDK("your_api_key");
+const sdk = new SDK("your_api_key");
 
-    async function outputWeather () {
-        const weatherData = await sdk.getCurrentWeather("Tashkent");
-        console.log(weatherData);
-    }
+async function outputWeather() {
+	const weatherData = await sdk.getCurrentWeather("Tashkent");
+	console.log(weatherData);
+}
+
+outputWeather();
 ```
 
 ## Modes
@@ -47,31 +49,35 @@ Used technologies:
 1. **Default mode.** In this mode you every time call the _getCurrentWeather()_ method SDK makes a new request.
 
 ```ts
-    import SDK from "@shodlikshomuratov/openweather-sdk";
+import SDK from "@shodlik_shomuratov/openweather-sdk";
 
-    cosnt sdk = new SDK("your_api_key", {
-        mode: "default"
-    });
+cosnt sdk = new SDK("your_api_key", {
+    mode: "default"
+});
 
-    async function outputWeather () {
-        const weatherData = await sdk.getCurrentWeather("Tashkent");
-        console.log(weatherData);
-    }
+async function outputWeather () {
+    const weatherData = await sdk.getCurrentWeather("Tashkent");
+    console.log(weatherData);
+}
+
+outputWeather();
 ```
 
 2. **Polling mode.** In polling mode in order to maintenance zero latency response, you get data from stored weather data and SDK makes a new request for you every 10 minutes.
 
 ```ts
-    import SDK from "@shodlikshomuratov/openweather-sdk";
+import SDK from "@shodlik_shomuratov/openweather-sdk";
 
-    cosnt sdk = new SDK("your_api_key", {
-        mode: "polling"
-    });
+cosnt sdk = new SDK("your_api_key", {
+    mode: "polling"
+});
 
-    async function outputWeather () {
-        const weatherData = await sdk.getCurrentWeather("Tashkent");
-        console.log(weatherData);
-    }
+async function outputWeather () {
+    const weatherData = await sdk.getCurrentWeather("Tashkent");
+    console.log(weatherData);
+}
+
+outputWeather();
 ```
 
 ## Redis Store
@@ -79,22 +85,24 @@ Used technologies:
 If you want you can save updated weather data in your redis store. Only thing you have to do is give SDK redis options in the redis field.
 
 ```ts
-    import SDK from "@shodlikshomuratov/openweather-sdk";
+import SDK from "@shodlik_shomuratov/openweather-sdk";
 
-    cosnt sdk = new SDK("your_api_key", {
-        mode: "polling",
-        redis: {
-            host: "127.0.0.1", // your redis host
-            port: 6379, // your redis port
-            username: "my_redis_username", // optional, if you have one
-            password: "my_redis_password", // optional, if you have one
-        }
-    });
-
-    async function outputWeather () {
-        const weatherData = await sdk.getCurrentWeather("Tashkent");
-        console.log(weatherData);
+cosnt sdk = new SDK("your_api_key", {
+    mode: "polling",
+    redis: {
+        host: "127.0.0.1", // your redis host
+        port: 6379, // your redis port
+        username: "my_redis_username", // optional, if you have one
+        password: "my_redis_password", // optional, if you have one
     }
+});
+
+async function outputWeather () {
+    const weatherData = await sdk.getCurrentWeather("Tashkent");
+    console.log(weatherData);
+}
+
+outputWeather();
 ```
 
 ## Testing purposes
