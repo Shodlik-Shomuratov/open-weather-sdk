@@ -10,7 +10,7 @@ Used technologies:
 
 <!-- ![node.js](https://w7.pngwing.com/pngs/562/102/png-transparent-nodejs-hd-logo.png) -->
 
-<img src="https://w7.pngwing.com/pngs/562/102/png-transparent-nodejs-hd-logo.png" width="80px"> <img src="https://cdn.iconscout.com/icon/free/png-256/free-typescript-1174965.png" width="80px"> <img src="https://raw.githubusercontent.com/jpb06/jpb06/master/icons/Jest.svg" width="80px"> <img src="https://pbs.twimg.com/profile_images/1763208293281894400/5MVDq7In_400x400.jpg" width="80px"> <img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/redis_original_logo_icon_146368.png" width="80px">
+<a href="https://nodejs.org/en"><img src="https://w7.pngwing.com/pngs/562/102/png-transparent-nodejs-hd-logo.png" width="80px"></a><a href="https://www.typescriptlang.org/"><img src="https://cdn.iconscout.com/icon/free/png-256/free-typescript-1174965.png" width="80px"></a><a href="https://jestjs.io/"><img src="https://raw.githubusercontent.com/jpb06/jpb06/master/icons/Jest.svg" width="80px"></a><a href="https://openweathermap.org/"><img src="https://pbs.twimg.com/profile_images/1763208293281894400/5MVDq7In_400x400.jpg" width="80px"></a><a href="https://redis.io/"><img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/redis_original_logo_icon_146368.png" width="80px"></a>
 
 ## Contents
 
